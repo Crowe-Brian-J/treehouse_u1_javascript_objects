@@ -23,3 +23,36 @@ for (let key in person) {
   //console.log(key); <-- Logs key like name, nickname
   console.log(`${key}: ${person[key]}`) //cannot use ${person.key} (Looks for person.key which doesn't exist)
 }
+
+/*
+  Object.keys(person) returns an array of keys --> name, nickname, etc.
+  Object.values(person) returns an array of values --> "Edward", "Duke", etc.
+  Object.length(person) returns how many key value pairs (6)
+  Spread operator combines two or more objects into one
+
+  - const name = {
+  -   firstName: "Reggie",
+  -   lastName: "Williams"
+  - };
+
+  - const role = {
+  -   title: "Software Developer",
+  -   skills: ["JavaScript", "HTML", "CSS"],
+  -   isTeacher: true
+  - };
+  
+  Merge name and role into a 'person' object
+  - const person = {
+  -   ...name,
+  -   ...role
+  - };
+
+  - console.log(person);
+  - {
+  -   firstName: "Reggie",
+  -   lastName: "Williams",
+  -   title: "Software Developer",
+  -   skills: ["JavaScript", "HTML", "CSS"],
+  -   isTeacher: true
+  - }
+*/
